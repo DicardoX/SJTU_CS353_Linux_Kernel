@@ -52,7 +52,7 @@
 
 [Ref: [linux 内核] 自建内核模块，并以proc文件形式提供外部访问接口，可通过读取此文件读内核数据](https://blog.csdn.net/ykun089/article/details/106376044/
 
-- `proc_create` OR `create_proc_entry`
+- `proc_create` OR `create_proc_entry` OR `create_proc_read_entry`
 
 - `static inline struct proc_dir_entry *proc_create(const char *name, mode_t mode, struct proc_dir_entry *parent, const struct file_operations *proc_fops)`
   - `name`：创建的文件名
