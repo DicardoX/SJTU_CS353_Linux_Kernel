@@ -1,0 +1,1 @@
+cmd_/home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.mod := { echo  /home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.o; echo; } > /home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.mod

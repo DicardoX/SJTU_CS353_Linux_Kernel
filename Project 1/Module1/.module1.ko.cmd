@@ -1,0 +1,1 @@
+cmd_/home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.ko /home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.o /home/dicardo/Desktop/LinuxKernel/Project1/Module1/module1.mod.o;  true
