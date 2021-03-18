@@ -91,5 +91,5 @@ module_init(hello_init);
 module_exit(hello_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("Module3");
+MODULE_DESCRIPTION("Module4");
 MODULE_AUTHOR("Chunyu Xue");
