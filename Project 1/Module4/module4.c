@@ -13,7 +13,7 @@
 
 // Message
 static char *message = NULL;
-// Directory
+// Directory and file
 struct proc_dir_entry *helloworldDir, *helloworld;
 
 
@@ -40,6 +40,7 @@ static ssize_t hello_proc_write(struct file *file, const char __user *buffer, si
 	}
 	// Release the original string space
 	kfree(message);
+	// Redirect
 	message = userBuffer;
 	return count;
 }
