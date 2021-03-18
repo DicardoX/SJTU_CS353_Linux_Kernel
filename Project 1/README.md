@@ -166,11 +166,34 @@
     - **seq_puts**：`int seq_puts(struct seq_file *m, char *s)`：把一个字符串输出到seq_file文件
   - <font color=blue>注意</font>：**seq_read、seq_lseek、seq_release等函数可以直接赋给file_operations文件操作结构的成员**。seq_file结构通常保存在file结构的private_data中。
 
+--------
 
 
 
+## 3. 过程中遇到的问题：
 
+- **内核模块签名问题**：
 
+  - 在插入第四个模块的时候，dmesg内输出错误信息：
+
+    ```
+    root@ubuntu:/home/dicardo/Desktop/LinuxKernel/Project1/Module3# dmesg
+    [89.203313] module4: loading out-of-tree module taints kernel.
+    [89.203350] module4: module verification failed: signature and/or required key missing - tainting kernel
+    ```
+
+    注意到是内核模块的签名在动态加载时出现了验证的问题，因此在Makefile的开头处加入：
+
+    ```
+    CONFIG_MODULE_SIG=n
+    ```
+
+    以关闭内核签名的功能，成功解决。
+
+- **/proc文件的输入输出问题**
+
+  - **输入**：`echo 1234 > /proc/helloworld`
+  - **输出**：`cat /proc/helloworld`
 
 
 
