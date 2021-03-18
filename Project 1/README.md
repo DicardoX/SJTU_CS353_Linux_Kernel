@@ -1,4 +1,4 @@
-# Project1: 内核编程基础
+# Project1: Linux内核模块编程基础
 
 -----
 

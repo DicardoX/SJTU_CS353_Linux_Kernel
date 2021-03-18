@@ -1,12 +1,10 @@
 # CS353_Linux_Kernel
 
-[Project Ref](https://github.com/DeanAlkene/CS353-Linux-Kernel)
-
 ------------
 
  - Project 0: 编译、安装Linux Kernel
 
-- Project 1: 内核模块编程基础
+- Project 1: Linux内核模块编程基础
   - 模块一：加载和卸载模块，该模块可输出部分信息
 
   - 模块二：该模块可以接收三种类型的参数 (整型、字符串、数组)
