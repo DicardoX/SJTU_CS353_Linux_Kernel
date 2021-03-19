@@ -2,8 +2,9 @@
 
 ------------
 
+ - Linux内核笔记：
+    - Linux Kernel 编程基础
  - Project 0: 编译、安装Linux Kernel
-
 - Project 1: Linux内核模块编程基础
   - 模块一：加载和卸载模块，该模块可输出部分信息
 
