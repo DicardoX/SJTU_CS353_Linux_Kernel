@@ -164,7 +164,7 @@ static int __init clone_hijack_init(void)
 }
 ```
 
- 		**完成函数指针的实例化后，我们开始实现伪造的系统调用处理函数**。该函数需要首先打印信息，其次是对真实处理函数 `sys_clone()` 的回调。因此，基于上面选择的函数参数格式，我们将该伪造的处理函数实现如下：
+​		**完成函数指针的实例化后，我们开始实现伪造的系统调用处理函数**。该函数需要首先打印信息，其次是对真实处理函数 `sys_clone()` 的回调。因此，基于上面选择的函数参数格式，我们将该伪造的处理函数实现如下：
 
 ```c
 /* Hijack function on clone system call */
@@ -302,8 +302,6 @@ static inline pteval_t native_pte_val(pte_t pte) {
 ​		本次项目实现模块的源码可见 [*Appendix A*](#appendixA)。
 
 ------
-
-
 
 
 
