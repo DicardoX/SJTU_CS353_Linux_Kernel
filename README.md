@@ -2,6 +2,8 @@
 
 ------------
 
+###### Notes
+
  - Linux内核笔记：
     - Lecture1：Linux Kernel内核概述
     - Lecture2：进程管理
@@ -16,6 +18,8 @@
 
 
 -------------------
+
+###### Projects
 
  - **Project 0**：**编译、安装Linux Kernel**
 
